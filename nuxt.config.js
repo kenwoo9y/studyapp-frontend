@@ -48,6 +48,8 @@ export default {
   },
 
   vuetify: {
+    customVariables: ['~/assets/sass/variables.scss'],
+    treeShake: true,
     theme: {
       themes: {
         light: {

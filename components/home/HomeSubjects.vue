@@ -1,6 +1,6 @@
 <template>
   <div>
-    HomeSubject.vue
+    HomeSubjects.vue
   </div>
 </template>
 

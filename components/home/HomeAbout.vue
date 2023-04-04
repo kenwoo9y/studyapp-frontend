@@ -1,7 +1,7 @@
 <template>
-  <v-app>
+  <div>
     HomeAbout.vue
-  </v-app>
+  </div>
 </template>
 
 <script>

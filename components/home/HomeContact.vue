@@ -1,6 +1,6 @@
 <template>
   <div>
-    HomeContat.vue
+    HomeContact.vue
   </div>
 </template>
 

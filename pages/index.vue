@@ -16,6 +16,7 @@
         </v-row>
       </v-container>
     </v-sheet>
+    <app-footer />
   </v-app>
 </template>
 

@@ -21,17 +21,17 @@
 </template>
 
 <script>
-import homeAbout from '~/components/home/homeAbout'
-import homeSubjects from '~/components/home/homeSubjects'
-import homePrice from '~/components/home/homePrice'
-import homeContact from '~/components/home/homeContact'
+import HomeAbout from '~/components/home/HomeAbout'
+import HomeSubjects from '~/components/home/HomeSubjects'
+import HomePrice from '~/components/home/HomePrice'
+import HomeContact from '~/components/home/HomeContact'
 
 export default {
   components: {
-    homeAbout,
-    homeSubjects,
-    homePrice,
-    homeContact
+    HomeAbout,
+    HomeSubjects,
+    HomePrice,
+    HomeContact
   },
   data () {
     return {

@@ -1,6 +1,33 @@
 <template>
   <v-app>
     <home-app-bar />
+    <v-img
+      dark
+      src="/image/eye_catch_img.jpg"
+      gradient="to top right, rgba(19,84,122,.6), rgba(128,208,199,.9)"
+      :height="imgHeight"
+    >
+      <v-row
+        align="center"
+        justify="center"
+        :style="{ height: `${imgHeight}px` }"
+      >
+        <v-col
+          cols="12"
+          class="text-center"
+        >
+          <h1 class="display-1 mb-4">
+            Study App
+          </h1>
+          <h4
+            class="subheading"
+            :style="{ letterSpacing: '5px' }"
+          >
+            大人の英語学習に
+          </h4>
+        </v-col>
+      </v-row>
+    </v-img>
     <v-sheet>
       <v-container
         fluid
@@ -35,6 +62,7 @@ export default {
   },
   data () {
     return {
+      imgHeight: 500,
       menus: [
         { title: 'about', subtitle: 'about' },
         { title: 'subjects', subtitle: 'subjects' },

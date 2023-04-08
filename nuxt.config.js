@@ -44,6 +44,10 @@ export default {
     '@nuxtjs/i18n'
   ],
 
+  publicRuntimeConfig: {
+    appName : process.env.APP_NAME
+  },
+
   // Axios module configuration
   axios: {
     // baseURL: 'http://localhost:3000'

@@ -1,6 +1,12 @@
 {
+    "menus": {
+      "about": "私たちについて",
+      "subjects": "科目",
+      "price": "価格",
+      "contact": "お問い合わせ"
+    },
     "title": {
-      "signup": "Sign Up",
-      "signin": "Sign In"
+      "signup": "会員登録",
+      "signin": "ログイン"
     }
   }

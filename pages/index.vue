@@ -1,6 +1,8 @@
 <template>
   <v-app>
-    <home-app-bar />
+    <home-app-bar 
+      :menus="menus"
+    />
     <v-img
       dark
       src="/image/eye_catch_img.jpg"
@@ -23,7 +25,7 @@
             class="subheading"
             :style="{ letterSpacing: '5px' }"
           >
-            大人の英語学習に
+            大人の学び直しに
           </h4>
         </v-col>
       </v-row>
@@ -37,6 +39,16 @@
           v-for="(menu, i) in menus"
           :key="`menu-${i}`"
         >
+          <v-col cols="12">
+            <v-card flat>
+              <v-card-title class="justify-center display-1">
+                {{ $t(`menus.${menu.title}`) }}
+              </v-card-title>
+              <v-card-text class="text-center">
+                {{ menu.subtitle }}
+              </v-card-text>
+            </v-card>
+          </v-col>
           <v-col cols="12">
             <div :is="`home-${menu.title}`" />
           </v-col>
@@ -64,9 +76,9 @@ export default {
     return {
       imgHeight: 500,
       menus: [
-        { title: 'about', subtitle: 'about' },
         { title: 'subjects', subtitle: 'subjects' },
         { title: 'price', subtitle: 'price' },
+        { title: 'about', subtitle: 'about' },
         { title: 'contact', subtitle: 'contact' }
       ]
     }

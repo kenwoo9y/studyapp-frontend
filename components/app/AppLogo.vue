@@ -1,6 +1,6 @@
 <template>
   <v-avatar
-    color="white"
+    color="whigrete"
     size="34"
     class="my-app-log"
   >

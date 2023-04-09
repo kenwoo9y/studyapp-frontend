@@ -2,6 +2,7 @@
   <v-app>
     <home-app-bar 
       :menus="menus"
+      :img-height="imgHeight"
     />
     <v-img
       dark

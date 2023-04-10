@@ -6,7 +6,9 @@
     :color="toolbarStyle.color"
     :elevation="toolbarStyle.elevation"
   >
-    <app-logo />
+    <app-logo 
+      @click.native="$vuetify.goTo('#scroll-top')"
+    />
     <v-toolbar-title>
       {{ appName }}
     </v-toolbar-title>
@@ -18,6 +20,7 @@
         v-for="(menu, i) in menus"
         :key="`menu-btn-${i}`"
         text
+        @click="$vuetify.goTo(`#${menu.title}`)"
       >
         {{ $t(`menus.${menu.title}`) }}
       </v-btn>

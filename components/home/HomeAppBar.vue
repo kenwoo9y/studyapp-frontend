@@ -25,6 +25,9 @@
         {{ $t(`menus.${menu.title}`) }}
       </v-btn>
     </v-toolbar-items>
+
+    <app-signin-button />
+    <app-signup-button />
   </v-app-bar>
 </template>
 

@@ -8,7 +8,7 @@
       id="scroll-top"
       dark
       src="/image/eye_catch_img.jpg"
-      gradient="to top right, rgba(19,84,122,.6), rgba(128,208,199,.9)"
+      gradient="to top right, rgba(19,84,122,.3), rgba(128,208,199,.1)"
       :height="imgHeight"
     >
       <v-row

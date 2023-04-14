@@ -20,6 +20,7 @@
         v-for="(menu, i) in menus"
         :key="`menu-btn-${i}`"
         text
+        :class="{'hidden-sm-and-down': (menu.title === 'about')}"
         @click="$vuetify.goTo(`#${menu.title}`)"
       >
         {{ $t(`menus.${menu.title}`) }}
@@ -50,7 +51,7 @@
           v-for="(menu, i) in menus"
           :key="`menu-list-${i}`"
           exact
-          @click="goTo(`#${menu.title}`)"
+          @click="$vuetify.goTo(`#${menu.title}`)"
         >
           <v-list-item-title>
             {{ $t(`menus.${menu.title}`) }}

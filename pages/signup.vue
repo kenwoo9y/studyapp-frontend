@@ -1,7 +1,13 @@
 <template>
-  <div>
-    signup.vue
-  </div>
+  <user-form-card>
+    <template 
+      #user-form-card-content
+    >
+      <user-form-name />
+      <user-form-email />
+      <user-form-password />
+    </template>
+  </user-form-card>
 </template>
 
 <script>

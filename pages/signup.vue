@@ -3,15 +3,32 @@
     <template 
       #user-form-card-content
     >
-      <user-form-name />
-      <user-form-email />
-      <user-form-password />
+      <v-form 
+        v-model="isValid"
+      >
+        <user-form-name />
+        <user-form-email />
+        <user-form-password />
+        <v-btn 
+          :disabled="!isValid"
+          block
+          color="primary"
+          class="white--text"
+        >
+         登録
+        </v-btn>
+      </v-form>
     </template>
   </user-form-card>
 </template>
 
 <script>
 export default {
-  layout: 'before-login'
+  layout: 'before-login',
+  data() {
+    return {
+      isValid: false
+    }
+  }
 }
 </script>

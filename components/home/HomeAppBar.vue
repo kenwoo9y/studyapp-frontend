@@ -3,7 +3,7 @@
     app
     dark:dark="!isScrollPoint"
     :height="appBarHeight"
-    :color="toolbarStyle.color"
+    :color="white"
     :elevation="toolbarStyle.elevation"
   >
     <app-logo 

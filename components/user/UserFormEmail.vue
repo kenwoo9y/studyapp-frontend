@@ -1,8 +1,9 @@
 <template>
   <v-text-field
     v-model="setEmail"
+    :rules="rules"
     label="メールアドレス"
-    placeholder="メールアドレス"
+    :placeholder="placeholder ? 'メールアドレス' : undefined"
     outlined
   />
 </template>
@@ -13,6 +14,18 @@ export default {
     email: {
       type: String,
       default: ''
+    },
+    placeholder: {
+      type: Boolean,
+      default: false
+    }
+  },
+  data () {
+    return {
+      rules: [
+        v => !!v || '',
+        v => /.+@.+\..+/.test(v) || ''
+      ]
     }
   },
   computed: {

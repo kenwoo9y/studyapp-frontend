@@ -43,9 +43,9 @@ export default {
       const required = v => !!v || ''
       const format = v => /^[\w-]{8,64}$/.test(v) || msg
 
-      const rules = this.noValidation ? [required] : [format]
-      const hint = this.noValidation ? undefined : msg
-      const placeholder = this.noValidation ? undefined : min
+      const rules = this.setValidation ? [format] : [required]
+      const hint = this.setValidation ? msg : undefined
+      const placeholder = this.setValidation ? min : undefined
       return { rules, hint, placeholder }
     },
     toggle () {

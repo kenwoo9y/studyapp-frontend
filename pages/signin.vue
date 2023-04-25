@@ -43,7 +43,7 @@
 
 <script>
 export default {
-  layout: 'before-login',
+  layout: 'before-signin',
   data() {
     return {
       isValid: false,

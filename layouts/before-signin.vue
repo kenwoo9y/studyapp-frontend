@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <before-login-app-bar />
+    <before-signin-app-bar />
     <v-main>
         <nuxt />
     </v-main>

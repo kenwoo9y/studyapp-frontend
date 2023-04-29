@@ -1,12 +1,17 @@
 {
-    "menus": {
-      "about": "私たちについて",
-      "subjects": "科目",
-      "price": "価格",
-      "contact": "お問い合わせ"
-    },
-    "title": {
-      "signup": "会員登録",
-      "signin": "ログイン"
+  "menus": {
+    "about": "私たちについて",
+    "subjects": "科目",
+    "price": "価格",
+    "contact": "お問い合わせ"
+  },
+  "title": {
+    "signup": "会員登録",
+    "signin": "ログイン",
+    "signout": "ログアウト",
+    "account": {
+      "settings": "アカウント設定",
+      "password": "パスワード変更"
     }
   }
+}

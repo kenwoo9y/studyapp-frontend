@@ -5,7 +5,7 @@
     color="primary"
     to="/signin"
   >
-    {{ $t('title.signin') }}
+    {{ $my.pageTitle('signin') }}
   </v-btn>
 </template>
 

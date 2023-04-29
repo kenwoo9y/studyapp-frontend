@@ -5,7 +5,7 @@
     color="success"
     to="/signup"
   >
-    {{ $t('title.signup') }}
+    {{ $my.pageTitle('signup') }}
   </v-btn>
 </template>
 

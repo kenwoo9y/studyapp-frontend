@@ -1,12 +1,12 @@
 const redirectPath = '/cource'
 
 export const state = () => ({
-  loggedIn: false,
+  signedIn: false,
   styles: {
     beforeLogin: {
       appBarHeight: 56
     },
-    loggedIn: {
+    signedIn: {
       redirectPath: {
         name: redirectPath
       }

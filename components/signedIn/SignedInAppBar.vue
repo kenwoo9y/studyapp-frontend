@@ -24,7 +24,7 @@
 export default {
     data ({ $store }) {
         return {
-            redirectPath: $store.state.loggedIn.redirectPath
+            redirectPath: $store.state.signedIn.redirectPath
         }
     }
 }
